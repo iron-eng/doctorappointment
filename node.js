@@ -2,7 +2,7 @@
 const express = require("express");
 const mongo = require("mongoose");
 
-    const mongodb = mongo.connect("mongodb://localhost:27017/appoindoctor")
+    const mongodb = mongo.connect("mongodb+srv://irondev:covide19@dpdata.k8nwu4a.mongodb.net/doctorappointment")
 
 const doctorfield = mongo.Schema({
     name: String,
