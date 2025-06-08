@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/patienthomestye.css"/>
+    <title>Doctor-HomePage</title>
+</head>
+<body>
+    <header class="h">
+       <form action="/logout" method="post" >
+           <button >LogOut</button>
+       </form>
+    </header>
+    <main >
+        <div class="home">
+            <p class="appb">Book New AppointMent</p>
+            <article class="appointments" id="t">
+
+            </article>
+        </div>
+        <div hidden class="re">
+            <form action="/specility" method="post" id="f" class="form">
+                <label for="t">Enter the specility of doctor you want to appoint</label>
+
+                <input id="t" type="text" name="spec"/>
+                <button type="submit" id="se">Enter</button>
+            </form>
+        </div>
+        <div hidden class="sre">
+            <div class="appointments" id="app">
+              
+            </div>
+        </div>
+       
+    </main>
+    <script src="/patienthomejavascript.js"></script>
+</body>
+</html>

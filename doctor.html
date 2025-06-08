@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="doctor.css"/>
+    <title>Doctor-SignUp/Login</title>
+</head>
+<body class="doctor">
+    <a class="back" href="/">Back To Home</a>
+    <div class="slcontainer" id="c">
+        <div id="sign">
+            <form class="signinpage" method="post" action="/docinput">
+                <span id="togglebutton" class="button">Login</span>
+                <div class="docname">
+                    <label for="n">Enter your name</label>
+                    <input id="n" type="text" name="name" />
+                </div>
+                <div class="docemail">
+                    <label for="e">Enter your email</label>
+                    <input id="e" type="email" name="email" />
+                </div>
+                <div class="docpass">
+                    <label for="p">Enter your password</label>
+                    <input id="p" type="password" name="password" />
+                </div>
+                <div class="docspecility">
+                    <label for="s">Enter your specility</label>
+                    <input id="s" type="text" name="specility" />
+                </div>
+                <input class="button" type="submit" value="SignIn" />
+
+            </form>
+
+        </div>
+        <div hidden id="log">
+            <form class="login" action="/doclogin" method="post">
+                <span id="toggleloginbutton" class="button">SignIn</span>
+                <div class="docemail">
+                    <label for="e">Enter your email</label>
+                    <input id="e" type="email" name="email" />
+                </div>
+                <div class="docpass">
+                    <label for="p">Enter your password</label>
+                    <input id="p" type="password" name="password" />
+                </div>
+                <input class="button" type="submit" value="SignIn" />
+            </form>
+        </div>
+
+    </div>
+    <script src="doctor.js"></script>
+</body>
+</html>

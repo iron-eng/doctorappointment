@@ -1,0 +1,50 @@
+﻿body
+{
+    background-image:url("background.jpg");
+    background-size:100vw;
+}
+.mainheading{
+    background-color:#808080;
+    color:white;
+    width:500px;
+    text-align:center;
+    border-radius:40px;
+    box-shadow:#000000 -2px 2px 2px 2px;
+    margin:auto;
+    margin-top:150px;
+    padding:40px;
+}
+.button {
+    background-color: #00a3c2;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 30px;
+}
+.mainbutton{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:60px;
+    gap:70px;
+    
+
+}
+@media only screen and (orientation:portrait){
+    .mainbutton{
+        flex-direction:column;
+    }
+    .mainheading{
+        padding:100px;
+        font-size:50px;
+        width:700px;
+        margin-top:500px;
+    }
+   body{
+       background-repeat:no-repeat;
+   }
+   .button{
+       padding:50px;
+   }
+}

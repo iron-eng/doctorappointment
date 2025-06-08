@@ -1,0 +1,119 @@
+﻿.doctor
+{
+    background-image:url("doctor.jpg");
+    background-size:100vw;
+  
+}
+.back{
+    text-decoration:none;
+    color:white;
+    margin:auto;
+    background-color:#003cb7cb;
+    padding:30px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:30px;
+    width:200px;
+    border:2px solid #03506a
+}
+.pateint {
+    background-image: url("patent.jpeg");
+    background-size: 100vw;
+}
+.signinpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.login {
+    display: flex;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+input{
+    background-color:#808080;
+    color:white;
+    border-radius:10px;
+ 
+}
+.button {
+    background-color: #003cb7cb;
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.slcontainer {
+    
+    border: 10px solid black;
+    padding: 10px;
+    width: 500px;
+    height:300px;
+    border-radius: 40px;
+    margin: auto;
+    backdrop-filter: blur(100px);
+    margin-top: 100px;
+    color:white;
+    font-size:20px;
+
+}
+.toggle{
+    animation:toggleanimation;
+    animation-duration:6s;
+}
+#togglebutton{
+    width:100px;
+    text-align:center;
+}
+@keyframes toggleanimation{
+    0%{
+        transform:rotateX(0deg);
+    }
+    50%{
+        transform:rotateX(90deg);
+    }
+    100%{
+        transform:rotateX(0deg);
+    }
+}
+@media only screen and (orientation:portrait){
+    body{
+        background-repeat:no-repeat;
+        
+    }
+    .slcontainer{
+        width:900px;
+        height:1100px;
+    }
+    .signinpage {
+        font-size: 80px;
+        color: black;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+    }
+    .login {
+        font-size: 80px;
+        color: black;
+       
+    }
+    input{
+        width:600px;
+        height:30px;
+        
+    }
+    #togglebutton {
+        width: 300px;
+    }
+    input.button{
+        height:100px;
+        font-size:50px;
+    }
+}
